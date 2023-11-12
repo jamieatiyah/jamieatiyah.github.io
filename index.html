@@ -1,0 +1,774 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 14px;
+}
+
+.pdf-container {
+            width: 100%;
+            height: 600px; /* Adjust the height as needed */
+            overflow: auto; /* Enable scrolling within the iframe */
+            
+.footer a {
+    color: #555; /* Set your preferred color */
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #ff7e5f; /* Change to your preferred hover color */
+}
+
+.project {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.project:hover {
+    opacity: 1;
+}
+
+        /* Add your CSS styles here for the filter */
+        #filter-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+            
+
+
+
+</style>
+
+<script>
+    function filterProjects() {
+        var selectedTechnology = document.getElementById("filter").value;
+        var projects = document.getElementsByClassName("project");
+
+        for (var i = 0; i < projects.length; i++) {
+            var keywords = projects[i].getAttribute("data-keywords").split(' ');
+            var projectMatches = keywords.includes(selectedTechnology) || selectedTechnology === "all";
+            
+            if (projectMatches) {
+                projects[i].style.display = "block";
+            } else {
+                projects[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+    
+	</head>
+	<body class="is-preload">
+	
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+						</div>
+						<div class="content">
+						
+						 
+							<div class="inner">
+								<h1>Jamie Atiyah Portfolio</h1>
+								<p>Enthusiastic Data Scientist and Data Analyst
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#About">About</a></li>
+								<li><a href="#Projects">Projects</a></li>
+								<li><a href="#Education">Education</a></li>
+								<li><a href="#FPL">FPL</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+								
+							</ul>
+						</nav>
+					</header>
+					
+					
+					
+                <!-- Footer -->
+                
+
+               <!-- Footer -->
+<div class='footer'>
+  <a href="https://github.com/jamieatiyah"><i class="fab fa-github" style='font-size:30px'></i></a>
+  <br></br>
+  <a href="https://www.linkedin.com/in/jamie-atiyah-033b76189/"><i class="fab fa-linkedin-in" style='font-size:30px'></i></a>
+  <br></br>
+<!-- Add View CV button with an icon -->
+<a href="path/to/your/cv.pdf" target="_blank" class="cv-button"><i class="fas fa-file-alt"></i> View CV</a>
+
+</div>
+
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- About Me -->
+							<article id="About">
+								<h2 class="major">About</h2>
+								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+								<p>Greetings! I'm Jamie Atiyah, a 24-year-old from the sunny town of Stockport. My passions span across football, cricket, music, and data. I have an unwavering intrigue for uncovering profound insights from data. This curiosity began when seeing the effective use of data analytics be effectively utilised within sports.</p>
+								<p>I have completed an MSc in Data Science at Manchester Metropolitan University, acheiving a 83.5% grade (distinction). I bring 2 years of experience from the Bank of New York Mellon's graduate development program and hold a 2.1 in Mathematics from the University of York.</p>
+								<p>I possess proficiency in Python, R, C#, and SQL, coupled with adeptness in exploratory data analysis, machine learning, and big data solutions. Moreover, my experience extends to encompassing an array of tools and technologies, including PyTorch, Apache Spark, Pandas, NumPy, TensorFlow, scikit-learn, and much more! <p>
+								<p></p>
+								<a href="images/Jamie Atiyah CV.pdf" target="_blank" rel="noopener noreferrer">
+    <button>View CV</button>
+</a>
+
+<p> <pp>
+            <h2 class ="major">Contact Information</h2>
+            <p>Email: jamiea2910@hotmail.co.uk</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/jamie-atiyah-033b76189/">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/jamieatiyah">GitHub Profile</a></p>
+        </article>
+
+						<!-- Work -->
+<article id="Projects">
+    <h1 class="major">Projects</h1>
+    
+    <p> All projects are available <a href="https://github.com/jamieatiyah">here</a><p>
+    
+<div id="filter-container">
+    <label for="filter">Filter by Technology:</label>
+    <select id="filter" onchange="filterProjects()">
+        <option value="all">All</option>
+        <option value="Apache Spark">Apache Spark</option>
+        <option value="Deep Learning">Deep Learning</option>
+        <option value="Ensemble Learning">Ensemble Learning</option>
+        <option value="GBM">Gradient Boosting Machines</option>
+        <option value="Machine Learning">Machine Learning</option>
+        <option value="Pandas">Pandas</option>
+        <option value="Python">Python</option>
+        <option value="PyTorch">PyTorch</option>
+        <option value="Seaborn">Seaborn</option>
+        <option value="SQL">SQL</option>
+        <option value="Tableau">Tableau</option>
+    </select>
+</div>
+
+        
+        <p><p/>
+        
+        <div class="project" data-keywords="Machine Learning Python Pandas Sci-kit Learn Ensemble Learning Seaborn ML GBM">
+        
+        <a href="https://github.com/jamieatiyah/AutoTrader-Vehicle-Value-Prediction/tree/main" target="_blank" rel="noopener noreferrer">
+  <h2 style="text-decoration: underline;">ML Regression for AutoTrader Pricing</h2>
+</a>
+
+        
+        <a href="https://github.com/jamieatiyah/AutoTrader-Vehicle-Value-Prediction/tree/main" target="_blank" rel="noopener noreferrer">
+  <span class="image main"><img src="images/summaryplot.png" alt="" /></span>
+</a>
+        
+        <p> Keywords: <b>Supervised Learning, Principal Components Analysis, Scikit-Learn, Pandas, Model Ensembling</b></p>
+        
+        <p> In this project, I leveraged machine learning to predict vehicle selling prices using real-world data from AutoTrader. The aim was to build a robust model that could accurately estimate a vehicle's market value based on key features. <p>
+        
+        <button class="read-more-button">Read More</button>
+        <div class="additional-info">
+       <p><p>
+        <h3>Key Highlights</h3>
+        <p><p>
+    <ul>
+        <li><strong>Data Cleaning and Feature Engineering:</strong> We started by cleaning and preprocessing the dataset,
+            addressing missing values, and engineering features to extract meaningful information.</li>
+        <li><strong>Model Selection:</strong> After extensive testing, we identified the Random Forest Regressor as the
+            best-performing model for our task. This powerful algorithm showed superior predictive capabilities.</li>
+        <li><strong>Dimensionality Reduction:</strong> To further enhance model performance, we implemented Principal
+            Component Analysis (PCA) for dimensionality reduction, allowing us to maintain accuracy while reducing
+            computational complexity.</li>
+        <li><strong>Boosted Trees:</strong> We explored Gradient Boosting Regressor and Histogram-Based Gradient Boosting
+            Regressor models with optimized hyperparameters, which provided valuable insights into our dataset.</li>
+        <li><strong>Ensemble Modeling:</strong> To boost predictive power, we employed ensemble techniques like Voting and
+            Stacking. These methods combined multiple models to achieve more accurate results.</li>
+        <li><strong>Model Analysis:</strong> We delved into model interpretability with techniques like Shap values, partial
+            dependency plots, and permutation importance. These tools helped us understand feature importance and
+            interactions.</li>
+        <li><strong>Performance on the Entire Dataset:</strong> Our final ensemble model was applied to the complete
+            dataset, showcasing strong performance and generalization capabilities.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p><p>
+    <p>
+        This project demonstrates a comprehensive approach to predictive modeling, emphasizing feature engineering, model
+        selection, and ensemble techniques. It provides valuable insights into the vehicle pricing domain and serves as a
+        foundation for future enhancements and applications.
+    </p>
+    
+    <h3>Github</h3>
+    
+    <p><p>
+    <p>
+        The full jupyter notebook & report are available <a href="https://github.com/jamieatiyah/AutoTrader-Vehicle-Value-Prediction/tree/main">here</a>
+        
+     </p>   
+    <h3>Full Report</h3>
+        <div class="pdf-container">
+        <iframe src="/Users/jamieatiyah/Downloads/html5up-dimension/images/Advanced Machine Learning Report.pdf" frameborder="0" width="100%" height="100%"></iframe>
+        </div>
+           
+        
+        </div>
+    </div>
+    
+    <p> <p>
+    
+<div class="project" data-keywords="SQL Tableau Python">
+
+
+        <a href="https://github.com/jamieatiyah/FPL_SQL_Project" target="_blank" rel="noopener noreferrer">
+            <h2 style="text-decoration: underline; color: #fff;">FPL Project using Python, SQL & Tableau</h2>
+        </a>
+
+
+    
+   <a href="https://github.com/jamieatiyah/FPL_SQL_Project" target="_blank" rel="noopener noreferrer">
+    <span class="image main"><img src="images/FPL.jpg" alt="" style="height: 350px; width: auto";/></span>
+</a>
+
+
+    <p> Keywords: <b> SQL, Python, Tableau, Postgresql, Data Cleaning, Data Manipulation, Data Aggregation  </b> </p>
+    <p>Utilizing Postgresql & Python to analyze Fantasy Premier League (FPL) data.</p>
+    <button class="read-more-button">Read More</button>
+    <div class="additional-info">
+        <p><p>
+        <h3>Key Highlights</h3>
+        <p><p>
+            
+    <ul>
+        <li>Utilised Python Requests library to extract data from the FPL API. </li>
+        <li>Dissected player data for key metrics: goals, assists, and expected goals involvement.</li>
+        <li>Analyzed team strength, attacking prowess, and defensive capabilities for valuable insights.</li>
+        <li>Developed a fixture difficulty system considering team strengths and upcoming challenges.</li>
+        <li>Real-time data extraction with a Python script for a dynamic dataset.</li>
+    </ul>
+
+    <h3>Outcomes:</h3>
+    <ul>
+        <li>Identified top-performing players and teams, revealing key influencers in the game.</li>
+        <li>Established correlations between expected metrics and actual performance.</li>
+        <li>Created a dynamic fixture difficulty ranking system for anticipating upcoming challenges.</li>
+    </ul>
+    
+     <h3>Github</h3>
+     
+     <p><p>
+     <p>
+         The full Jupyter notebook and Postgresql script are available <a href="https://github.com/jamieatiyah/FPL_SQL_Project">here</a> </a>. 
+     </p>    
+     <h3>Tableau Dashboard</h3>
+     <p><p>
+     <p>
+         
+         The Tableau dashboard is available <a href = "https://public.tableau.com/views/FPLDashboard_16996282108380/FPLTeamAnalysis?:language=en-GB&:display_count=n&:origin=viz_share_link">here</a></a>.
+         
+      </p>   
+     
+            
+        </div>
+    </div>
+<p><p>
+    
+    
+    
+    
+    
+    <div class="project" data-keywords="PyTorch Python Deep Learning ML">
+    
+    <a href="https://github.com/jamieatiyah/Hurricane-Deep-Learning-Project" target="_blank" rel="noopener noreferrer">
+        <h2 style="text-decoration: underline; color: #fff;">Deep Learning for Post-Hurricane Damage Assessment</h2>
+    </a>
+        
+        <a href="https://github.com/jamieatiyah/Hurricane-Deep-Learning-Project" target="_blank" rel="noopener noreferrer">
+  <span class="image main"><img src="images/Hurricane.jpg" alt="" /></span> </a>
+  
+        <p> Keywords: <b> PyTorch, Transfer Learning, ImageNet, VGG16, ResNet50  </b> </p>
+        
+        <p>In this project, I utilsed deep learning models, VGG16 and ResNet50, to assess post-hurricane damage in houses using satellite imagery. I trained these models on a dataset of 10,000 images of damaged and undamaged houses from Hurricane Harvey. The results were promising, with VGG16 achieving an accuracy of 80.85% and an F1 score of 0.8341. I also employed image augmentation techniques and performed ROC-AUC analysis to validate the models' effectiveness in predicting damage status.</p>
+        <button class="read-more-button">Read More</button>
+        <div class="additional-info">
+        <p><p>
+        <h3>Key Highlights</h3>
+        <p><p>
+<ul>
+  <li>Development of deep learning models (VGG16 and ResNet50) for post-hurricane damage assessment.</li>
+  <li>Training on a dataset of 10,000 satellite images from Hurricane Harvey.</li>
+  <li>Notable performance with VGG16, reaching an 80.85% accuracy and an F1 score of 0.8341.</li>
+  <li>Effective utilization of image augmentation techniques and ROC-AUC analysis for model evaluation.</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p><p>
+<p>Through this project, I successfully demonstrated the potential of deep learning models, especially VGG16, for rapid and accurate post-hurricane damage classification using satellite imagery. These models hold significant promise for aiding emergency response efforts in the aftermath of natural disasters. However, further research and optimization are necessary to enhance model generalization and reduce computational costs for real-world applications.</p>
+
+<h3>Github</h3>
+
+<p><p>
+<p>
+    The full Google Colab script and report are available <a href="https://github.com/jamieatiyah/Hurricane-Deep-Learning-Project">here</a> </a>. 
+</p>  
+
+            
+        </div>
+    </div>
+    
+    <p><p>
+    
+   
+<div class="project" data-keywords="Apache Spark Python Seaborn">
+    <a href="https://github.com/jamieatiyah/TFL-Analysis-using-Spark" target="_blank" rel="noopener noreferrer">
+        <h2 style="text-decoration: underline; color: #fff;">Analysis of Bike Rides using Apache Spark</h2>
+    </a>
+    <a href="https://github.com/jamieatiyah/TFL-Analysis-using-Spark" target="_blank" rel="noopener noreferrer">
+        <span class="image main"><img src="images/Bike_Rides.jpg" alt="" /></span>
+    </a>
+    <p> Keywords: <b> PySpark, Hypothesis Testing </b> </p>
+    <p>Advancements in data storage capacity and the reduction in memory device size have paved the way for handling large volumes of data, known as big data. This report explores the use of Apache Spark 3.3.2 to test two hypotheses related to bike rentals in London in 2014. The first hypothesis examines whether people ride longer in autumn than in spring, while the second investigates the relationship between bike rentals and traffic volume.</p>
+    <button class="read-more-button">Read More</button>
+    <div class="additional-info">
+        <p></p>
+        <h3>Key Highlights</h3>
+        <ul>
+            <li>Utilized Apache Spark 3.3.2 for data analysis and hypothesis testing.</li>
+            <li>Tested two hypotheses related to bike rentals in London in 2014.</li>
+            <li>Found statistically significant differences in bike ride durations between spring and autumn.</li>
+            <li>Explored the relationship between bike rentals and traffic volume.</li>
+            <li>Correlation analysis revealed little correlation between bike rentals and traffic volume.</li>
+        </ul>
+        <h3>Conclusion</h3>
+        <p></p>
+        <p>In conclusion, the analysis of bike rentals in London provided valuable insights. While there is evidence of longer bike ride durations in spring compared to autumn, the relationship between bike rentals and traffic volume remains inconclusive. Further research incorporating geographical data may offer a more accurate representation of traffic patterns and their impact on bike rentals.</p>
+        <h3>Github</h3>
+
+        <p><p>
+        <p>
+            The full Google Colab script and report are available <a href="https://github.com/jamieatiyah/TFL-Analysis-using-Spark">here</a> </a>. 
+        </p> 
+    </div>
+</div>
+<!-- Add more projects as needed -->
+</article>
+
+
+						<!-- Education -->
+<article id="FPL" style=" center; width: 600%;">
+    <h2 class="major">FPL Dashboard</h2>
+    <h3>Tableau Dashboard</h3>
+
+    <div class='tableauPlaceholder' id='viz1699630666539' style='position: relative; margin: 0 auto;'>
+        <noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FP&#47;FPLDashboard_16996282108380&#47;FPLTeamAnalysis&#47;1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='FPLDashboard_16996282108380&#47;FPLTeamAnalysis' />
+            <param name='tabs' value='yes' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;FP&#47;FPLDashboard_16996282108380&#47;FPLTeamAnalysis&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-GB' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1699630666539');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if (divElement.offsetWidth > 800) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '850px';
+        } else if (divElement.offsetWidth > 500) {
+            vizElement.style.width = '1000px';
+            vizElement.style.height = '850px';
+        } else {
+            vizElement.style.width = '100%';
+            vizElement.style.height = '1450px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+</article>
+
+
+
+
+						<!-- Education -->
+							<article id="Education">
+								<div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="education-item">
+                    <h3 class="education-title">MSc in Data Science</h3>
+                    <p class="education-description">During my MSc in Data Science, I gained expertise in a wide range of data science-related fields. Some of my notable achievements include:</p>
+                    <ul class="education-highlights">
+                        <li>Advanced Machine Learning - Achieved a grade of 91%.</li>
+                        <li>Algorithms and Data Structures in C# - Achieved a grade of 83%.</li>
+                        <li>Computational Mathematics and Statistics in R - Achieved a grade of 86%.</li>
+                        <li>Data Management and Governance - Achieved a grade of 95%.</li>
+                        <li>High-Performance Computing and Big Data using Apache Spark - Achieved a grade of 87%.</li>
+                    </ul>
+                    
+                    <!-- Mention MSc Overall Grade and Dissertation Achievement -->
+                    <p><strong>Overall MSc Grade:</strong> 83.5% (Distinction)</p>
+                    <p><strong>Dissertation:</strong> Modelling Hospital Inpatient LOS using unsupervised learning and phase-type modelling - Achieved a grade of 89%.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="education-item">
+                    <h3 class="education-title">BSc in Mathematics</h3>
+                    <p class="education-description">During my BSc in Mathematics, I gained expertise in various mathematical disciplines. Some notable achievements include:</p>
+                    <ul class="education-highlights">
+                        <li>Mathematical Finance - Achieved a grade of 72%.</li>
+                        <li>Survival Analysis - Achieved a grade of 77%.</li>
+                        <li>Stochastic Processes - Achieved a grade of 68%.</li>
+                        <li>Cryptography - Achieved a grade of 63%.</li>
+                        <li>Practical Data Science with R - Achieved a grade of 69%.</li>
+                    </ul>
+                    
+                    <p><strong>Overall BSc Grade:</strong> 2:1</p>
+                </div>
+                <iframe src="/Users/jamieatiyah/Downloads/html5up-dimension/Hypothesis_2.html"
+                        frameborder="0" width="100%" height="100%"
+                        style="transform: scale(0.8); transform-origin: 0 0; width: 125%; height: 125%;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+    </article>
+								
+    
+						
+						<!-- Elements -->
+							<article id="Elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const readMoreButtons = document.querySelectorAll(".read-more-button");
+
+        readMoreButtons.forEach((button) => {
+            button.addEventListener("click", function () {
+                const project = button.closest(".project");
+                const additionalInfo = project.querySelector(".additional-info");
+
+                if (additionalInfo.style.display === "block") {
+                    additionalInfo.style.display = "none";
+                    button.textContent = "Read More";
+                } else {
+                    additionalInfo.style.display = "block";
+                    button.textContent = "Read Less";
+                }
+            });
+        });
+    });
+</script>
+<style>
+    /* ... your other styles ... */
+
+    .additional-info {
+        display: none; /* Add this line to hide the additional info by default */
+    }
+
+    .pdf-container {
+        width: 100%;
+        height: 600px; /* Adjust the height as needed */
+        overflow: auto; /* Enable scrolling within the iframe */
+    }
+
+    /* ... your other styles ... */
+</style>
+
+
+
+
+	</body>
+</html>
