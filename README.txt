@@ -13,13 +13,13 @@ Welcome to the repository for my personal portfolio website hosted on GitHub Pag
 
 ## About
 
-This repository contains the github pages portfolio website I have built based on a html template. The portfolio contains:
+This repository contains the GitHub Pages portfolio website I have built based on an HTML template. The portfolio contains:
 
-* A navigation page.
-* A about me page.
-* A projects page.
-* A education page.
-* A Tableau dashboard.
+- A navigation page.
+- An about me page.
+- A projects page.
+- An education page.
+- A Tableau dashboard.
 
 ## Features
 
@@ -27,43 +27,25 @@ This repository contains the github pages portfolio website I have built based o
 - **Project Showcase:** A section highlighting some of the key projects I have worked on, complete with descriptions and links.
 - **Contact Information:** An easy way for visitors to get in touch with me.
 
-
 ## Built With
 
 - HTML
 - CSS
 - JavaScript
 
-
-This is the portfolio website that is host
-#Read Me file for used template
+## Read Me file for used template
 Dimension by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
+This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages" and a cool depth effect (click on a menu item to see what I mean). Simple, fully responsive, and kitted out with all the usual pre-styled elements you'd expect. Hope you dig it :)
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images you can use for pretty much whatever. (* = not included)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+AJ aj@lkn.io | @ajlkn
 
-(* = not included)
+**Credits:**
 
-AJ
-aj@lkn.io | @ajlkn
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+- Demo Images: Unsplash (unsplash.com)
+- Icons: Font Awesome (fontawesome.io)
+- Other: jQuery (jquery.com), Responsive Tools (github.com/ajlkn/responsive-tools)
